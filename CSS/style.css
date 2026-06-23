@@ -1,0 +1,553 @@
+/*
+==============
+Sessao inicio 
+==============
+*/
+
+.sessao-inicio {
+    color: var(--color-branca);
+    padding-top: 7em;
+    padding-bottom: 5em;
+    width: 100%;
+    height: fit-content;
+    min-height: 49em;
+    max-width: 100%;
+
+    background-image: linear-gradient(to right,
+            #030a14, #030a14ec, #0d2240c6, #0d2240b0), url("../imagens/imagem-sessao-inicio.avif");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.conteudo-inicio {
+    margin-left: auto;
+    width: 77%;
+    height: 100%;
+
+    padding: 2em 0 0;
+}
+
+.faixa-botoes {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1.5em;
+
+    margin-bottom: 2em;
+}
+
+.botao-r {
+    width: fit-content;
+    height: auto;
+    padding: 1em 2em;
+    color: var(--color-branca);
+    font-size: 1.4rem;
+    border: 1px solid var(--color-primary);
+    text-transform: uppercase;
+    transition: .555s ease-in-out;
+}
+
+.explorar-viagens {
+    background-color: var(--color-primary);
+    color: var(--color-preta);
+}
+
+.explorar-viagens:hover {
+    border: 1px solid var(--color-branca);
+    background-color: var(--color-branca);
+}
+
+.conhecer-apex {
+    color: var(--color-primary);
+    transition: .444s ease-in;
+}
+
+.conhecer-apex:hover {
+    background-color: color-mix(in srgb, var(--color-primary) 22%, var(--color-hover) 15%);
+}
+
+article.box-estatisticas {
+    width: 65%;
+    height: 7em;
+    background-color: color-mix(in srgb, var(--color-cards) 55%, var(--cor-bordas) 15%);
+}
+
+article.box-estatisticas>.container {
+    padding: 0;
+}
+
+.estatistica-itens {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.estatisticas {
+    width: 25%;
+    height: 100%;
+    max-width: 25.555%;
+
+    border-right: 1px solid var(--color-hover);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+.estatisticas p {
+    font-size: 1.3rem;
+    color: var(--color-cinza);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p.name-estatistic {
+    font-family: Orbitron;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+
+/*
+============
+Sessao sobre
+============
+*/
+
+.sessao-sobre {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-height: 49em;
+    background-color: var(--background-geral);
+}
+
+.sessao-sobre>div.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-sobre {
+    padding: 5em 0 0 7em;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.sessao-sobre .conteudo-sobre h2.title-sessao {
+    font-size: 5rem;
+    line-height: 1.2;
+}
+
+.sessao-sobre .conteudo-sobre p.subtitle-sessao {
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.caixa-cards-sobre {
+    width: 100%;
+    height: auto;
+    min-height: 15em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.5em;
+}
+
+.card-sobre {
+    width: 90%;
+    height: auto;
+    min-height: 5em;
+    background-color: var(--color-cards);
+    border: 1px solid var(--cor-bordas);
+
+
+    padding: 1em;
+
+    display: flex;
+    gap: 1.5em;
+}
+
+span.icone-card {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    flex-shrink: 1;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-hover);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.icone-card svg {
+    width: 1em;
+    height: 1em;
+    color: var(--color-primary);
+
+}
+
+.content-card {
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-sobre p {
+    color: var(--color-cinza);
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: Outfit;
+}
+
+.tema-card b {
+    font-weight: 600;
+    color: var(--color-branca);
+}
+
+
+/* subsessao img flutuante */
+
+.img-sobre {
+    width: 50%;
+}
+
+.conteudo-sobre+section.img-sobre>div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 0 0;
+}
+
+.conteudo-subsessao-img {
+    width: 80%;
+    height: 90%;
+    max-height: 32em;
+    min-height: 30em;
+    margin: auto;
+    background-image: linear-gradient(to right, var(--cor-bordas), var(--color-hover),
+            var(--color-cards));
+    padding: .5em;
+}
+
+.img-flutuante {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/img-sessao-sobre.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5em 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.bloco-descricao-voo {
+    width: 100%;
+    height: auto;
+    min-height: 5em;
+    background-color: var(--color-cards);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5em;
+}
+
+.bloco-description {
+    width: 50%;
+    height: 100%;
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.bloco-description+.bloco-description {
+    text-align: end;
+}
+
+.bloco-description span {
+    color: var(--color-cinza);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.bloco-description p>b {
+    color: var(--color-branca);
+}
+
+span.horario {
+    font-family: Orbitron;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+p.tempo-viagem {
+    font-size: 1.2rem;
+    color: var(--color-cinza);
+}
+
+/* 
+==============
+Sessao eventos
+==============
+*/
+
+.sessao-eventos {
+    width: 100%;
+    height: auto;
+    min-height: 45em;
+
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--background-geral);
+    padding: 2em 7em;
+}
+
+.sessao-eventos .title-sessao {
+    font-size: 3rem;
+}
+
+.conteudo-sessao {
+    width: 100%;
+    height: fit-content;
+}
+
+
+.ver-mais {
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    padding: 1em 2em;
+    color: var(--color-primary);
+
+    display: flex;
+    gap: 1em;
+}
+
+.container-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1em;
+    padding: 0 0 .1em;
+}
+
+
+
+.card-evento {
+    width: 33.33%;
+    max-width: 33.33%;
+    height: auto;
+    min-height: 25em;
+    background-color: var(--cor-bordas);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-origin: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    padding: 1.5em;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    transition: .555s ease-in;
+    overflow: hidden;
+}
+
+.card-evento:hover {
+    background-size: 110% 110%;
+    transition: background-size all .555s ease-in;
+}
+
+.card-evento.card-1 {
+    background-image: linear-gradient(to top, #1b191979, #1b191979), url("../imagens/toquio.avif");
+}
+
+.card-evento.card-1:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/toquio.avif");
+}
+
+.card-evento.card-2 {
+    background-image: linear-gradient(to top, #1b191979, #1b191979), url("../imagens/dubai.avif");
+}
+
+.card-evento.card-2:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/dubai.avif");
+}
+
+.card-evento.card-3 {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/nova-york.avif");
+}
+
+.card-evento.card-3:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/nova-york.avif");
+}
+
+/* conteudo card eventos */
+
+.mensagem-card {
+    width: 100%;
+    height: auto;
+    min-height: 20%;
+}
+
+.mensagem-card p {
+    width: fit-content;
+    padding: .2em 1em;
+    font-size: 1.1rem;
+    background-color: var(--color-terciaria);
+}
+
+.content-card-evento {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.informacoes-card {
+    width: 60%;
+    text-align: start;
+}
+
+.informacoes-card+.informacoes-card {
+    width: 50%;
+    text-align: end;
+}
+
+.informacoes-card .pais {
+    display: flex;
+    color: var(--color-cinza);
+    font-size: 1.6rme;
+}
+
+.informacoes-card>.destino-viagem {
+    width: 100%;
+    height: 50%;
+
+    text-transform: uppercase;
+    font-family: Orbitron;
+    color: var(--color-branca);
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.preco-viagem {
+    font-size: 1.1rem;
+    color: var(--color-cinza);
+    font-family: Orbitron;
+}
+
+.preco-viagem>span.preco-valor {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+
+
+/* 
+================
+Sessao descontos
+ e promoções
+================
+*/
+
+.sessao-promo {
+    width: 100%;
+    height: auto;
+    min-height: 40em;
+    background-image: linear-gradient(to top, #1b1919ec, #1b1919ef), url("../imagens/sessao-desconto.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 5em 3em 3em;
+}
+
+.sessao-promo>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.sessao-promo .title-sessao {
+    font-size: 5.5rem;
+}
+
+.sessao-promo .subtitle-sessao {
+    font-size: 1.4rem;
+}
+
+.sessao-promo .btn-desconto {
+    padding: 1em 2em;
+    color: var(--color-preta);
+    font-size: 1.8rem;
+    background-color: var(--color-terciaria);
+    display: flex;
+    transition: .757s;
+}
+
+.sessao-promo .btn-desconto:hover {
+    padding: 1em 2em;
+    color: var(--color-preta);
+    background-color: var(--color-branca);
+}
+
+.sessao-promo .btn-desconto>strong {
+    font-weight: 600;
+}
+
+.sessao-promo .btn-desconto span.seta-esquerda {
+    display: inline-block;
+    border-width: 2px 2px 0px 0px;
+    border-style: solid;
+    border-color: #000;
+
+    width: fit-content;
+    height: fit-content;
+    padding: .2em .2em;
+    transform: rotate(45deg)
+}
