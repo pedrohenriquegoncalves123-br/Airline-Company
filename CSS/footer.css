@@ -29,6 +29,21 @@
     flex-direction: column;
 }
 
+.subtitle-logo {
+    margin-top: 1.5em;
+}
+
+.link-logo {
+    display: flex;
+    align-items: center;
+}
+
+.link-logo p {
+    font-family: Orbitron;
+    font-size: 2.1rem;
+    color: var(--color-primary);
+}
+
 .contato {
     width: 100%;
     min-height: 100%;
@@ -86,17 +101,18 @@
         text-align: left;
     }
 
+    .column-footer {
+        width: 100%;
+        text-align: left;
+        padding: 1.5em .5em .5em;
+    }
+
     .container-footer {
         width: 90%;
         text-align: left;
         display: flex;
         flex-direction: column;
         align-items: start;
-    }
-
-    .column-footer {
-        text-align: left;
-        padding: 0;
     }
 
     .footer-copyright {
