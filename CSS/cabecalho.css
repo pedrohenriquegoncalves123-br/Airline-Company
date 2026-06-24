@@ -71,14 +71,20 @@
     padding: 0 3em 0;
 }
 
+#menu-toggle,
+.icone-hamburguer {
+    display: none;
+}
+
 .menu {
-    width: 70%;
+    width: 100%;
     height: 100%;
     list-style-type: none;
 
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    transition: .555s ease-out;
 }
 
 .menu a {
@@ -97,8 +103,92 @@
     background-color: var(--color-primary);
     transition: .333s ease-in-out;
     padding: .7em 1.4em;
+    color: var(--color-preta);
+    margin-left: 10em;
 }
 
 #botao-reservar:hover {
+    color: var(--color-preta);
     background-color: var(--color-branca);
+}
+
+/* 
+=============
+Media Queries
+=============
+ */
+
+
+@media(max-width: 1080px) {
+    #botao-reservar {
+        transition: .444s ease-in;
+        margin-left: 5em;
+    }
+}
+
+@media(max-width: 992px) {
+    #botao-reservar {
+        margin-left: 1em;
+    }
+
+    .menu a {
+        color: var(--color-cinza);
+        padding: .5em 1em;
+        transition: .555s;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 30%;
+        padding: 1.5em;
+    }
+
+    .nav-bar {
+        width: 70%;
+        padding: 0;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .menu,
+    a#botao-reservar {
+        display: none;
+    }
+
+    label.icone-hamburguer {
+        display: flex;
+        font-size: 3rem;
+        color: var(--color-branca);
+    }
+
+    #menu-toggle:checked+.menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        min-height: 10em;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color: var(--color-primary);
+        transition: .555s ease;
+        justify-content: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: var(--color-preta);
+        font-size: 1.9rem;
+        padding: .5em;
+    }
 }
