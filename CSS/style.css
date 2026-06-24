@@ -80,6 +80,16 @@ article.box-estatisticas>.container {
     padding: 0;
 }
 
+div.bloco-estisticas {
+    width: 50%;
+    height: 7em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
 .estatistica-itens {
     width: 100%;
     height: 100%;
@@ -90,9 +100,9 @@ article.box-estatisticas>.container {
 
 
 .estatisticas {
-    width: 25%;
+    width: 50%;
     height: 100%;
-    max-width: 25.555%;
+    max-width: 50%;
 
     border-right: 1px solid var(--color-hover);
 
@@ -550,4 +560,125 @@ Sessao descontos
     height: fit-content;
     padding: .2em .2em;
     transform: rotate(45deg)
+}
+
+/* 
+==============
+Media Queries
+==============
+*/
+
+@media(max-width: 1080px) {
+    .container {
+        padding: 2em 0;
+    }
+
+    .conteudo-inicio {
+        margin-left: auto;
+        width: 87%;
+        height: 100%;
+        padding: 2em 0 0;
+        transition: .555s ease-in;
+    }
+
+    .sessao-sobre {
+        padding: 1em 0 1em;
+    }
+
+    .sessao-eventos {
+        width: 100%;
+        height: auto;
+        min-height: 45em;
+        min-width: 100%;
+        max-width: 100%;
+        transition: .656s ease-out;
+        background-color: var(--background-geral);
+        padding: 1em 2em 2em;
+    }
+}
+
+@media(max-width: 992px) {
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .card-evento {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sessao-sobre .conteudo-sobre p.subtitle-sessao {
+        width: 90%;
+    }
+}
+
+@media(max-width: 880px) {
+    .sessao-sobre>.container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .conteudo-sobre,
+    .img-sobre {
+        width: 100%;
+        height: fit-content;
+        padding: 1em .5em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card-sobre {
+        width: 90%;
+        margin: auto;
+    }
+
+    .conteudo-sobre {
+        padding: 5em 3em;
+    }
+
+    .img-flutuante {
+        width: 100%;
+        min-height: 30em;
+    }
+}
+
+@media(max-width: 768px) {
+
+    article.box-estatisticas {
+        width: 65%;
+        height: auto;
+        min-height: 8em;
+        background-color:
+            color-mix(in srgb, var(--color-cards) 55%, var(--cor-bordas) 15%);
+    }
+
+    article.box-estatisticas>.container {
+        padding: 0;
+        min-height: 8em;
+    }
+
+    .estatistica-itens {
+        height: auto;
+        min-height: 8em;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container > .estatistica-itens >.bloco-estisticas {
+        width: 100%;
+        height: 7em;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .estatisticas {
+        width: 50%;
+    }
 }
