@@ -6,7 +6,6 @@ Sessao inicio
 
 .sessao-inicio {
     color: var(--color-branca);
-    padding-top: 7em;
     padding-bottom: 5em;
     width: 100%;
     height: fit-content;
@@ -270,7 +269,7 @@ span.icone-card svg {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 5em 3em;
+    padding: 0 0 3em;
 
     display: flex;
     justify-content: center;
@@ -278,16 +277,16 @@ span.icone-card svg {
 }
 
 .bloco-descricao-voo {
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin: 0 auto;
+    padding: 1.5em;
     min-height: 5em;
     background-color: var(--color-cards);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 1.5em;
 }
 
 .bloco-description {
@@ -340,7 +339,10 @@ Sessao eventos
     min-width: 100%;
     max-width: 100%;
     background-color: var(--background-geral);
-    padding: 2em 7em;
+}
+
+.sessao-eventos>.container {
+    padding: 0;
 }
 
 .sessao-eventos .title-sessao {
@@ -348,7 +350,9 @@ Sessao eventos
 }
 
 .conteudo-sessao {
-    width: 100%;
+    width: 82.45%;
+    margin: auto;
+    box-sizing: border-box;
     height: fit-content;
 }
 
@@ -610,12 +614,26 @@ Media Queries
     .sessao-sobre .conteudo-sobre p.subtitle-sessao {
         width: 90%;
     }
+
+    .conteudo-sobre {
+        padding: 5em 0 0 0;
+    }
 }
 
 @media(max-width: 880px) {
     .sessao-sobre>.container {
         flex-direction: column;
         padding: 0;
+    }
+
+    .sessao-inicio .title-sessao {
+        width: 100%;
+        font-size: 2.5rem;
+        margin-left: .5em;
+    }
+
+    .conteudo-inicio {
+        width: 100%;
     }
 
     .conteudo-sobre,
@@ -668,7 +686,23 @@ Media Queries
         flex-wrap: wrap;
     }
 
-    .container > .estatistica-itens >.bloco-estisticas {
+    .conteudo-sessao {
+        padding: 5em 0 0 0;
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sessao-eventos {
+        padding: 0 0 5em;
+    }
+
+    .sessao-eventos>.container {
+        padding: 0;
+    }
+
+    .container>.estatistica-itens>.bloco-estisticas {
         width: 100%;
         height: 7em;
         margin: 0;
