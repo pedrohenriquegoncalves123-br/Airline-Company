@@ -691,13 +691,15 @@ Media Queries
     }
 }
 
-    article.box-estatisticas {
-        width: 65%;
-        height: auto;
-        min-height: 8em;
-        background-color:
-            color-mix(in srgb, var(--color-cards) 55%, var(--cor-bordas) 15%);
-    }
+    
+article.box-estatisticas {
+    width: 65%;
+    height: auto;
+    min-height: 8em;
+    margin: 0 auto;
+    background-color: 
+color-mix(in srgb, var(--color-cards) 55%, var(--cor-bordas) 15%);
+}
 
     article.box-estatisticas>.container {
         padding: 0;
