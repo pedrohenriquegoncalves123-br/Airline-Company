@@ -56,22 +56,12 @@ function colorMenuItem() {
 
     }
 }
-/* 
-window.addEventListener("scroll", mudarMenu());
-const cabecalho = document.getElementById("container-")[0];
-function mudarMenu() {
-    if (window.scrollY <= 150) {
-        cabecalho.classList.add("menu-rolado");
-    }
-    if (window.scrollY >= 150) {
-        cabecalho.classList.remove("menu-rolado");
-    }
-}
- */
+
 const cabecalho = document.getElementById("container-menu");
 
 window.addEventListener("scroll", mudarMenu());
 
+window.addEventListener("scroll", mudarMenu);
 function mudarMenu() {
     if (window.scrollY < 150) {
         cabecalho.classList.add("cabecalho");
@@ -79,11 +69,8 @@ function mudarMenu() {
 
         cabecalho.style.transition = ".555s ease-in-out";
 
-        const conteudoInicio = document.getElementsByClassName("conteudo-inicio")[0];
 
-        conteudoInicio.style.padding="65px"
-    } else {
+    } else if (window.scrollY >= 10) {
         cabecalho.classList.remove("menu-rolado");
     }
 }
-window.addEventListener("scroll", mudarMenu);
