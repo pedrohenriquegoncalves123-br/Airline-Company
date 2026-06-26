@@ -1,0 +1,127 @@
+/* 
+===================
+Sessao nossa missao
+===================
+*/
+
+.sessao-nossa-missao {
+    width: 100%;
+    height: fit-content;
+    min-height: 45em;
+    margin: 0 auto 1em;
+}
+
+.sessao-nossa-missao .conteudo-cabecalho-sessao {
+    width: 80%;
+    height: fit-content;
+    padding: 1em .5em 0;
+    margin: 0 auto 5em;
+}
+
+.conteudo-cabecalho-sessao .title-sessao {
+    font-size: 5rem;
+}
+
+.conteudo-nossa-missao {
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 1em;
+    display: flex;
+}
+
+.conteudo-img {
+    width: 50%;
+    height: 25em;
+    padding: 0 5em;
+}
+
+.sobre-associacao {
+    width: 50%;
+    padding-right: 10%;
+}
+
+.sobre-associacao h2.title-sessao {
+    font-size: 3.5rem;
+}
+
+.sobre-associacao p {
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+/* 
+=====================
+Sessao nossos valores
+=====================
+*/
+
+.sessao-nossos-valores {
+    height: auto;
+    min-height: 35em;
+    text-align: center;
+}
+
+.sessao-nossos-valores>.container {
+    padding: 5em 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-nossos-valores .container-cards {
+    width: 80%;
+    max-width: 80%;
+    height: fit-content;
+    min-height: 15em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: var(--color-branca);
+}
+
+.topicos-cards {
+    width: 24%;
+    height: fit-content;
+    min-height: 12em;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: .8em;
+    gap: .7em;
+
+    background-color: var(--color-cards);
+}
+
+.topicos-cards h3 {
+    font-family: Orbitron;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.topicos-cards p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-cinza);
+}
+
+/* 
+===============
+Sessao historia
+===============
+*/
+
+.sessao-historia>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5em;
+}
