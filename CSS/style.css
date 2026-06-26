@@ -682,7 +682,7 @@ Media Queries
         .sessao-inicio .title-sessao {
         width: 100%;
         font-size: 4.5rem;
-        /* margin-left: .5em; */
+        margin-left: .5em; 
     }
 
         .conteudo-inicio {
