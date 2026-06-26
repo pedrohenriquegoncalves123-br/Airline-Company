@@ -632,10 +632,23 @@ Media Queries
         margin-left: .5em;
     }
 
-    .conteudo-inicio {
+    div.conteudo-inicio {
         width: 100%;
     }
 
+    .faixa-botoes {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+    .botao-r{
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
     .conteudo-sobre,
     .img-sobre {
         width: 100%;
@@ -665,6 +678,18 @@ Media Queries
 }
 
 @media(max-width: 768px) {
+
+        .sessao-inicio .title-sessao {
+        width: 100%;
+        font-size: 4.5rem;
+        /* margin-left: .5em; */
+    }
+
+        .conteudo-inicio {
+        width: 100%;
+        padding: .5em !important;
+    }
+}
 
     article.box-estatisticas {
         width: 65%;
