@@ -157,6 +157,14 @@ body {
         box-sizing: border-box;
     }
 
+    .subtitle-sessao {
+    width: 100%;
+    font-size: 2rem;
+    color: 
+    color-mix(in srgb, var(--color-branca) 45%, var(--color-primary) 15%);
+    margin-bottom: 2em;
+}
+
     a.item-menu {
         border-bottom: 2px solid var(--color-cards);
         color: var(--color-branca);
