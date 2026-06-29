@@ -1,0 +1,229 @@
+.sessao-eventos {
+    width: 100%;
+    height: auto;
+    min-height: 45em;
+
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--background-geral);
+}
+
+.sessao-eventos>.container {
+    padding: 0;
+}
+
+.sessao-eventos .title-sessao {
+    font-size: 4.3rem;
+}
+
+.conteudo-sessao {
+    width: 82.45%;
+    margin: auto;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.cabecalho-viagens {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 3em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.botoes-item__container {
+    color: var(--color-branca);
+    width: 40%;
+    text-align: end;
+    height: 100%;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+form.container-menu {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 1em;
+}
+
+form.container-menu label {
+    padding: 1em 2em;
+    font-size: 1.1rem;
+    background-color: var(--background-geral);
+    border: 1px solid var(--color-primary);
+}
+
+form.container-menu input {
+    display: none;
+}
+
+.ativo {
+    background-color: var(--color-primary);
+    color: var(--color-preta);
+}
+
+article.container-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1em;
+    padding: 0 0 .1em;
+    margin-bottom: 1em;
+}
+
+
+
+.card-evento.card-1 {
+    background-image: linear-gradient(to top, #1b191979, #1b191979), url("../imagens/toquio.avif");
+}
+
+.card-evento.card-1:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/toquio.avif");
+}
+
+.card-evento.card-2 {
+    background-image: linear-gradient(to top, #1b191979, #1b191979), url("../imagens/dubai.avif");
+}
+
+.card-evento.card-2:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/dubai.avif");
+}
+
+.card-evento.card-3 {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/nova-york.avif");
+}
+
+.card-evento.card-3:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/nova-york.avif");
+}
+
+/* conteudo card eventos */
+.card-evento {
+    width: 33.33%;
+    max-width: 33.33%;
+    height: auto;
+    min-height: 25em;
+    background-color: var(--cor-bordas);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-origin: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    transition: .555s ease-in;
+    overflow: hidden;
+}
+
+.card-evento:hover {
+    background-size: 110% 110%;
+    transition: background-size all .555s ease-in;
+}
+
+.content-card-evento {
+    width: 100%;
+    min-height: 13em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: start;
+    padding: .5em 1.5em 0;
+
+    background-color: var(--color-cards);
+}
+
+.info-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes-card {
+    width: 60%;
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.informacoes-card+.informacoes-card {
+    width: 50%;
+    text-align: end;
+}
+
+.informacoes-card .pais {
+    display: flex;
+    color: var(--color-cinza);
+    font-size: 1.4rem;
+}
+
+.informacoes-card>.destino-viagem {
+    width: 100%;
+    height: 50%;
+
+    text-transform: uppercase;
+    font-family: Orbitron;
+    color: var(--color-branca);
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.preco-viagem {
+    font-size: 1.1rem;
+    color: var(--color-cinza);
+    font-family: Orbitron;
+}
+
+.preco-viagem>span.preco-valor {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.info-viagem-container {
+    margin-top: .8em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-cinza);
+}
+
+.btn-reservas {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: Arial, helvetica, sans-serif;
+    margin: 1em auto;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: var(--color-primary);
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-cinza) 35%);
+    border: 1px solid var(--color-primary);
+    padding: 1em 0;
+}
+
+.btn-reservas:hover {
+    transition: .555s ease-in-out;
+    background-color: var(--color-primary);
+    color: var(--color-preta);
+}

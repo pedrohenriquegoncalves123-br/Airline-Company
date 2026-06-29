@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/cabecalho.css">
+    <link rel="stylesheet" href="../CSS/css-geral.css">
+    <link rel="stylesheet" href="../CSS/viagens.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <title>Viagens</title>
+</head>
+
+<body>
+    <header id="container-menu" class="cabecalho"></header>
+    <main class="conteudo-principal">
+        <section class="sessao-eventos">
+            <div class="container">
+                <article class="conteudo-sessao">
+                    <div class="faixa-mensagem">
+                        <span class="icone"><svg xmlns="http://www.w3.org/2000/svg" width="" height=""
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-globe w-4 h-4 text-[#00c8f0]">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg></span>
+                        <p>Destinos em destaque</p>
+                    </div>
+                    <header class="cabecalho-viagens">
+                        <h2 class="title-sessao"> Todas as <span class="color-blue">Viagens</span>
+                        </h2>
+                        <div class="botoes-item__container">
+                            <form action="../js/interacao.js" class="container-menu">
+                                <input type="checkbox" name="todos" id="todos">
+                                <label for="todos" onclick="verficCardViagens()">Todos</label>
+
+                                <input type="checkbox" name="inter" id="inter">
+                                <label for="inter" onclick="verficCardViagens()">Internacional</label>
+
+                                <input type="checkbox" name="domestico" id="domestico">
+                                <label for="domestico" onclick="verficCardViagens()">Doméstico</label>
+                            </form>
+                        </div>
+                    </header>
+                    <article class="container-cards">
+                        <div class="card-evento card-1" id="cardInter">
+                            <div class="content-card-evento">
+                                <div class="info-container">
+                                    <div class="informacoes-card">
+                                        <p class="destino-viagem"><b>tóquio</b></p>
+                                        <p class="pais"><span class="icone"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="#737373" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg></span>
+                                            Japão</p>
+                                    </div>
+                                    <div class="informacoes-card">
+                                        <p class="preco-viagem">A partir de <br>
+                                            <span class="preco-valor">R$4.890</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-viagem-container">
+                                    <p class="horario-viagem">22h</p>
+                                    <p class="lugares-diponiveis">12 lugares</p>
+                                    <p class="avaliacoes-viagem">4.9</p>
+                                </div>
+                                <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
+                            </div>
+                        </div>
+                        <div class="card-evento card-2" id="cardInter">
+
+                            <div class="content-card-evento">
+                                <div class="info-container">
+                                    <div class="informacoes-card">
+                                        <p class="destino-viagem"><b>Dubai</b></p>
+                                        <p class="pais"><span class="icone"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="#737373" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                            </span>
+                                            Emirados Árabes
+                                        </p>
+                                    </div>
+                                    <div class="informacoes-card">
+                                        <p class="preco-viagem">A partir de <br>
+                                            <span class="preco-valor">R$3.240</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-viagem-container">
+                                    <p class="horario-viagem">22h</p>
+                                    <p class="lugares-diponiveis">12 lugares</p>
+                                    <p class="avaliacoes-viagem">4.9</p>
+                                </div>
+                                <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
+                            </div>
+                        </div>
+                        <div class="card-evento card-3" id="cardInter">
+                            <div class="content-card-evento">
+                                <div class="info-container">
+                                    <div class="informacoes-card">
+                                        <p class="destino-viagem"><b>Nova York</b></p>
+                                        <p class="pais"><span class="icone"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="#737373" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg></span>
+                                            EUA</p>
+                                    </div>
+                                    <div class="informacoes-card">
+                                        <p class="preco-viagem">A partir de <br>
+                                            <span class="preco-valor">R$2.980</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-viagem-container">
+                                    <p class="horario-viagem">22h</p>
+                                    <p class="lugares-diponiveis">12 lugares</p>
+                                    <p class="avaliacoes-viagem">4.9</p>
+                                </div>
+                                <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="container-cards">
+                        <div class="card-evento card-4" id="cardInter">
+                            <div class="content-card-evento">
+                                <div class="info-container">
+                                    <div class="informacoes-card">
+                                        <p class="destino-viagem"><b>Lisboa</b></p>
+                                        <p class="pais"><span class="icone"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="#737373" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg></span>
+                                            Portugal</p>
+                                    </div>
+                                    <div class="informacoes-card">
+                                        <p class="preco-viagem">A partir de <br>
+                                            <span class="preco-valor">R$4.890</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-viagem-container">
+                                    <p class="horario-viagem">22h</p>
+                                    <p class="lugares-diponiveis">12 lugares</p>
+                                    <p class="avaliacoes-viagem">4.9</p>
+                                </div>
+                                <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
+                            </div>
+                        </div>
+                        <div class="card-evento card-5" id="cardDomestico">
+                            <div class="content-card-evento">
+                                <div class="info-container">
+                                    <div class="informacoes-card">
+                                        <p class="destino-viagem"><b>Florianópolis</b></p>
+                                        <p class="pais"><span class="icone"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="#737373" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                            </span>
+                                            Brasil
+                                        </p>
+                                    </div>
+                                    <div class="informacoes-card">
+                                        <p class="preco-viagem">A partir de <br>
+                                            <span class="preco-valor">R$3.240</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-viagem-container">
+                                    <p class="horario-viagem">22h</p>
+                                    <p class="lugares-diponiveis">12 lugares</p>
+                                    <p class="avaliacoes-viagem">4.9</p>
+                                </div>
+                                <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
+                            </div>
+                        </div>
+                        <div class="card-evento card-6" id="cardDomestico">
+                            <div class="content-card-evento">
+                                <div class="info-container">
+                                    <div class="informacoes-card">
+                                        <p class="destino-viagem"><b>Recife</b></p>
+                                        <p class="pais"><span class="icone"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="#737373" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg></span>
+                                            Brasil</p>
+                                    </div>
+                                    <div class="informacoes-card">
+                                        <p class="preco-viagem">A partir de <br>
+                                            <span class="preco-valor">R$2.980</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-viagem-container">
+                                    <p class="horario-viagem">22h</p>
+                                    <p class="lugares-diponiveis">12 lugares</p>
+                                    <p class="avaliacoes-viagem">4.9</p>
+                                </div>
+                                <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div class="linha-sessao"></div>
+    <footer id="footer-site">
+        <div class="container-footer">
+            <div class="column-footer">
+                <div class="logo-footer d-flex">
+                    <a href="/" class="link-logo logo">
+                        <span class="caixa-icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-plane w-4 h-4 text-[#030a14] -rotate-45"
+                                data-fg-d3bl7="0.8:1.44306:/src/app/App.tsx:59:13:1560:55:e:Plane::::::EEKI"
+                                data-fgid-d3bl7=":r6:">
+                                <path
+                                    d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p>
+                            APEX<span>AIR</span>
+                        </p>
+                    </a>
+                </div>
+                <p class="subtitle-logo">
+                    Redefinindo a experiência aérea com tecnologia, conforto e responsabilidade desde 2018.
+                </p>
+            </div>
+            <div class="column-footer">
+                <div class="navegacao">
+                    <h3>Navegação</h3>
+                    <ul class="paginas-links">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column-footer">
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <p>contato@raizurbana.com.br</p>
+                    <p>(11) 9999-9999</p>
+                    <p>São Paulo, SP</p>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2025 ApexAir Linhas Aéreas S.A. — CNPJ 32.948.100/0001-55</p>
+    </footer>
+    <script src="../js/interacao.js"></script>
+</body>
+
+</html>

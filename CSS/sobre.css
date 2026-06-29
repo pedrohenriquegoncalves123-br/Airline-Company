@@ -1,0 +1,194 @@
+/* 
+===================
+Sessao nossa missao
+===================
+*/
+
+.sessao-nossa-missao {
+    width: 100%;
+    height: fit-content;
+    min-height: 45em;
+    margin: 0 auto 1em;
+}
+
+.sessao-nossa-missao .conteudo-cabecalho-sessao {
+    width: 80%;
+    height: fit-content;
+    padding: 1em .5em 0;
+    margin: 0 auto 5em;
+}
+
+.conteudo-cabecalho-sessao .title-sessao {
+    font-size: 5rem;
+}
+
+.conteudo-nossa-missao {
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 1em;
+    display: flex;
+}
+
+.conteudo-img {
+    width: 50%;
+    height: 25em;
+    padding: 0 5em;
+}
+
+.sobre-associacao {
+    width: 50%;
+    padding-right: 10%;
+}
+
+.sobre-associacao h2.title-sessao {
+    font-size: 3.5rem;
+}
+
+.sobre-associacao p {
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+/* 
+=====================
+Sessao nossos valores
+=====================
+*/
+
+.sessao-nossos-valores {
+    height: auto;
+    min-height: 35em;
+    text-align: center;
+}
+
+.sessao-nossos-valores>.container {
+    padding: 5em 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-nossos-valores .container-cards {
+    width: 80%;
+    max-width: 80%;
+    height: fit-content;
+    min-height: 15em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: var(--color-branca);
+}
+
+.topicos-cards {
+    width: 24%;
+    height: fit-content;
+    min-height: 12em;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: .8em;
+    gap: .7em;
+
+    background-color: var(--color-cards);
+}
+
+.topicos-cards h3 {
+    font-family: Orbitron;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.topicos-cards p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-cinza);
+}
+
+/* 
+===============
+Sessao historia
+===============
+*/
+
+.sessao-historia>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5em;
+}
+
+div.linha-tempo__container {
+    width: 80%;
+    height: fit-content;
+    min-height: 15em;
+    padding: 3em 0 2em;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    color: var(--color-branca);
+}
+
+.linha-tempo-item {
+    width: 100%;
+    height: 7em;
+    text-align: start;
+
+    margin: 0 auto;
+    padding: 0;
+
+    align-items: center;
+}
+
+.linha-tempo__esquerda {
+    display: flex;
+    flex-direction: row;
+}
+
+.linha-tempo__direita {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+
+.linha-tempo__conteudo {
+    width: 90%;
+    height: 100%;
+    padding: 2em;
+    background-color: var(--color-cards);
+    font-family: Outfit;
+    border: 0.01em solid color-mix(in srgb, var(--color-primary) 15%, var(--color-preta) 60%);
+}
+
+
+.linha-tempo__ano {
+    padding-top: .3em;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    font-family: Orbitron;
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
+
+.linha-tempo__conteudo h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: .5em;
+}
+
+.linha-tempo__conteudo p {
+    font-size: 1.1rem;
+    color: var(--color-cinza);
+}
