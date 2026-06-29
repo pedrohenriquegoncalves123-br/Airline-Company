@@ -38,7 +38,7 @@ a.item-menu {
 
 html {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
