@@ -68,6 +68,10 @@ form.container-menu input {
     color: var(--color-preta);
 }
 
+.card-hidden{
+    display: none;
+}
+
 article.container-cards {
     width: 100%;
     display: flex;
