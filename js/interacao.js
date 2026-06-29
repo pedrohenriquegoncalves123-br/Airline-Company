@@ -27,7 +27,7 @@ const paginaSobre = "Sobre";
 const paginaViagens = "Viagens";
 const paginaIngressos = "Ingressos";
 
-function colorMenuItem() {
+function colorMenuItem () {
     const tituloPagina = document.title;
 
     if (tituloPagina != "") {
@@ -84,13 +84,15 @@ const verficCardViagens = () => {
     const cardDomestic = document.getElementById("cardDomestico");
 
     if (itemMenuTodos.checked) {
+
+        itemMenuTodos.classlist.add("ativo");
         cardInter.style.display = "flex";
         cardDomestic.style.display = "flex";
 
         cardInter.classList.add("ativo");
 
-        itemMenuInter = checked = "false";
-        itemMenuDomestico =checked = "false";
+        itemMenuInter.checked = "false";
+        itemMenuDomestico.checked = "false";
     }
 
     if (itemMenuInter.checked) {
