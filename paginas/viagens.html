@@ -45,18 +45,18 @@
                         <div class="botoes-item__container">
                             <form action="../js/interacao.js" class="container-menu">
                                 <input type="checkbox" name="todos" id="todos">
-                                <label for="todos" onclick="verficCardViagens()">Todos</label>
+                                <label for="todos" class="menu-cards">Todos</label>
 
                                 <input type="checkbox" name="inter" id="inter">
-                                <label for="inter" onclick="verficCardViagens()">Internacional</label>
+                                <label for="inter" class="menu-cards">Internacional</label>
 
                                 <input type="checkbox" name="domestico" id="domestico">
-                                <label for="domestico" onclick="verficCardViagens()">Doméstico</label>
+                                <label for="domestico" class="menu-cards">Doméstico</label>
                             </form>
                         </div>
                     </header>
                     <article class="container-cards">
-                        <div class="card-evento card-1" id="cardInter">
+                        <div class="card-evento card-1 todos cardInter">
                             <div class="content-card-evento">
                                 <div class="info-container">
                                     <div class="informacoes-card">
@@ -86,7 +86,7 @@
                                 <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
                             </div>
                         </div>
-                        <div class="card-evento card-2" id="cardInter">
+                        <div class="card-evento card-2 todos cardInter">
 
                             <div class="content-card-evento">
                                 <div class="info-container">
@@ -119,7 +119,7 @@
                                 <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
                             </div>
                         </div>
-                        <div class="card-evento card-3" id="cardInter">
+                        <div class="card-evento card-3 todos cardInter">
                             <div class="content-card-evento">
                                 <div class="info-container">
                                     <div class="informacoes-card">
@@ -151,7 +151,7 @@
                         </div>
                     </article>
                     <article class="container-cards">
-                        <div class="card-evento card-4" id="cardInter">
+                        <div class="card-evento card-4 todos cardInter">
                             <div class="content-card-evento">
                                 <div class="info-container">
                                     <div class="informacoes-card">
@@ -181,7 +181,7 @@
                                 <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
                             </div>
                         </div>
-                        <div class="card-evento card-5" id="cardDomestico">
+                        <div class="card-evento card-5 todos cardDomestico">
                             <div class="content-card-evento">
                                 <div class="info-container">
                                     <div class="informacoes-card">
@@ -213,7 +213,7 @@
                                 <a href="./ingressos.html" class="btn-reservas">Reservar Vaga</a>
                             </div>
                         </div>
-                        <div class="card-evento card-6" id="cardDomestico">
+                        <div class="card-evento card-6 todos cardDomestico">
                             <div class="content-card-evento">
                                 <div class="info-container">
                                     <div class="informacoes-card">
@@ -297,7 +297,8 @@
         </div>
         <p class="footer-copyright">© 2025 ApexAir Linhas Aéreas S.A. — CNPJ 32.948.100/0001-55</p>
     </footer>
-    <script src="../js/interacao.js"></script>
+    <script src="../js/cabecalho.js"></script>
+    <script src="../js/viagens.js"></script>
 </body>
 
 </html>
