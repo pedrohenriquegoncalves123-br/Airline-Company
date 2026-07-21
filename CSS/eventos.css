@@ -1,0 +1,184 @@
+.cabecalho-sessao {
+    width: 87%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.sessao-eventos_inicio .container-cards {
+    width: 87%;
+    height: fit-content;
+    min-height: 30em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+    padding-bottom: 5em;
+}
+
+.sessao-eventos_inicio .subtitle-sessao {
+    font-size: 1.5rem;
+}
+
+.card-evento {
+    width: 100%;
+    height: 13em;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+
+    color: var(--color-cinza);
+
+    background-color: var(--color-cards);
+    border: 0.01em solid color-mix(in srgb, var(--color-primary) 15%, var(--color-preta) 45%);
+}
+
+.bloco-img {
+    width: 25%;
+    height: 100%;
+    padding: .1em;
+    margin: 0;
+}
+
+.bloco-img img {
+    opacity: .7;
+    transition: .755s ease-out;
+}
+
+.card-evento:hover .bloco-img img {
+    opacity: 1;
+}
+
+.conteudo-card {
+    width: 75%;
+    height: 100%;
+    padding: 0;
+}
+
+.conteudo-card>.container {
+    padding: 1.5em 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1em;
+}
+
+.linha-inicial__container {
+    width: fit-content;
+    height: fit-content;
+    min-height: 2em;
+    padding: .5em 0;
+    font-size: 1.3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.ind-card {
+    padding: .5em .6em;
+    color: var(--color-preta);
+    background-color: var(--color-primary);
+}
+
+.title-card {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-size: 2rem;
+    font-family: Orbitron;
+    color: var(--color-branca);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.subtitle-card {
+    font-size: 1.3rem;
+    color: var(--color-cinza-claro);
+}
+
+.viagem-card__container,
+.informacoes-viagem {
+    display: flex;
+    flex-direction: row;
+}
+
+.viagem-card__container {
+    width: 100%;
+}
+
+.informacoes-viagem {
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+    width: fit-content;
+    color: var(--color-cinza-claro);
+    font-size: 1.3rem;
+    gap: 2em;
+}
+
+.container-btn {
+    margin-left: auto;
+    width: 40%;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.btn-inscrever-se {
+    width: fit-content;
+    padding: .5em 2em;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+
+    transition: .777s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+}
+
+.btn-inscrever-se:hover {
+    background-color: var(--color-primary);
+    color: var(--color-preta);
+}
+
+.seta-esquerda {
+    display: inline-block;
+    padding: .2em .2em;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: var(--color-primary);
+    transform: rotate(45deg);
+    width: fit-content;
+    height: fit-content;
+}
+
+a.btn-inscrever-se:hover span.seta-esquerda {
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: var(--color-preta);
+    transition: .777s ease-in-out;
+}
+
+/* 
+=============
+Media Queries
+=============
+*/
+
+@media(max-width: 992px) {}
+
+
+
+/* ************************************************************** */
+
+@media(max-width: 768px) {}
