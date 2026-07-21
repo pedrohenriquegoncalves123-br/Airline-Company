@@ -63,24 +63,22 @@ form.container-menu input {
     display: none;
 }
 
-.ativo {
+label.ativo {
     background-color: var(--color-primary);
     color: var(--color-preta);
-}
-
-.card-hidden{
-    display: none;
 }
 
 article.container-cards {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 
     gap: 1em;
     padding: 0 0 .1em;
     margin-bottom: 1em;
+
+    transition: .555s ease-in-out;
 }
 
 
@@ -107,6 +105,30 @@ article.container-cards {
 
 .card-evento.card-3:hover {
     background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/nova-york.avif");
+}
+
+.card-evento.card-4 {
+    background-image: linear-gradient(to top, #1b19199a, #1b191979), url("../imagens/card-lisboa.avif");
+}
+
+.card-evento.card-4:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/card-lisboa.avif");
+}
+
+.card-evento.card-5 {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/florianopolois.avif");
+}
+
+.card-evento.card-5:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/florianopolois.avif");
+}
+
+.card-evento.card-6 {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/Rio-de-janeiro.avif");
+}
+
+.card-evento.card-6:hover {
+    background-image: linear-gradient(to top, #1b19199a, #1b191996), url("../imagens/Rio-de-janeiro.avif");
 }
 
 /* conteudo card eventos */
@@ -230,4 +252,21 @@ article.container-cards {
     transition: .555s ease-in-out;
     background-color: var(--color-primary);
     color: var(--color-preta);
+}
+
+/* 
+=============
+Media Queries
+=============
+*/
+
+@media(max-width: 992px) {
+    article.container-cards {
+        flex-direction: column;
+    }
+
+    .card-evento {
+        width: 95%;
+        max-width: 100%;
+    }
 }
