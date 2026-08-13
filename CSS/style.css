@@ -753,3 +753,13 @@ Media Queries
         width: 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .sessao-inicio .title-sessao {
+        width: 100%;
+        max-width: 100%;
+        font-size: 4.5rem;
+        margin: 0;
+        padding-left: .5em;
+    }
+}
